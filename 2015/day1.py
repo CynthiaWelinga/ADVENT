@@ -22,5 +22,4 @@ To what floor do the instructions take Santa?
 import requests
 
 file_path = 'C:/Users/CynthiaWelinga/DEVELOPMENT/ADVENT/2015/day1.txt'
-with open(file_path) as file:
-    print(file.read())
+puzzle_input = open(file_path).read()
