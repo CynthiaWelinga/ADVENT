@@ -23,3 +23,11 @@ import requests
 
 file_path = 'C:/Users/CynthiaWelinga/DEVELOPMENT/ADVENT/2015/day1.txt'
 puzzle_input = open(file_path).read()
+floor = 0
+
+for i in puzzle_input:
+    if i=='(':
+        floor+=1
+    else:
+        floor-=1
+print(floor)
