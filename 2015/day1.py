@@ -19,8 +19,6 @@ For example:
 To what floor do the instructions take Santa?
 """
 
-import requests
-
 file_path = 'C:/Users/CynthiaWelinga/DEVELOPMENT/ADVENT/2015/day1.txt'
 puzzle_input = open(file_path).read()
 floor = 0

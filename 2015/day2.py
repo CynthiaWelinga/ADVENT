@@ -15,10 +15,6 @@ plus 1 square foot of slack, for a total of 43 square feet.
 All numbers in the elves' list are in feet. How many total square feet of wrapping paper should they order?
 """
 
-
-import requests
-
-
 file_path = 'C:/Users/CynthiaWelinga/DEVELOPMENT/ADVENT/2015/day2.txt'
 puzzle_input = open(file_path).readlines()
 
