@@ -70,9 +70,10 @@ def get_ribbon():
         nums =[int(num) for num in item]
         nums.sort()
 
-        total = 2*nums[0] + 2*nums[1]
+        total += (2*nums[0] + 2*nums[1]) + (nums[0]*nums[1]*nums[2])
 
     print(total)
 
 get_wrap()
 get_ribbon()
+
