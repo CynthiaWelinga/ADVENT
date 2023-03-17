@@ -37,7 +37,6 @@ for item in dimensions:
 
     total += (2*(nums[0]*nums[1]) + 2*(nums[1]*nums[2]) + 2*(nums[2]*nums[0])) + (nums[0]*nums[1])
 
-    print(nums, total)
     
 print(total)
 
