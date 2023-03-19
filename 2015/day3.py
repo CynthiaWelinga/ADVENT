@@ -23,16 +23,3 @@ For example:
 
 file_path = 'C:/Users/CynthiaWelinga/DEVELOPMENT/ADVENT/2015/day3.txt'
 puzzle_input = open(file_path).read()
-sub_str = '^v><'
-
-
-print(sub_str in puzzle_input)
-
-print(puzzle_input.count(sub_str))
-
-results = 0
-sub_len = len(sub_str) 
-for i in range(len(puzzle_input)):
-    if puzzle_input[i:i+sub_len] == sub_str: 
-        results += 1
-print (results)
