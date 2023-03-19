@@ -31,17 +31,25 @@ pos = (0,0)
 for i in puzzle_input:
     if i=='^':
         pos = (pos[0], pos[1]+1)
-    elif i=='v' or i=='V':
+    elif i=='v':
         pos = (pos[0], pos[1]-1)
     elif i=='>':
         pos = (pos[0]+1, pos[1])
     else:
         pos = (pos[0]-1, pos[1])
-        
-        
+    
     if pos not in visited: visited.append(pos)
 
-
-print(pos)
-#print(visited)
 print(len(visited))
+
+"""
+The next year, to speed up the process, Santa creates a robot version of himself, Robo-Santa, 
+to deliver presents with him.
+
+Santa and Robo-Santa start at the same location (delivering two presents to the same starting house), 
+then take turns moving based on instructions from the elf, 
+who is eggnoggedly reading from the same script as the previous year.
+
+This year, how many houses receive at least one present?
+"""
+for i in puzzle_input:
