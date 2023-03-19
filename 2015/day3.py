@@ -53,8 +53,8 @@ who is eggnoggedly reading from the same script as the previous year.
 This year, how many houses receive at least one present?
 """
 
-santa_visited = []
-robo_visited = []
+'v>v<vvv<<vv^v<v>vv>v<<<^'
+visited = []
 santa_pos = (0,0)
 robo_pos = (0,0)
 for i in puzzle_input:
@@ -68,7 +68,7 @@ for i in puzzle_input:
         else:
             santa_pos = (santa_pos[0]-1, santa_pos[1])
 
-        if santa_pos not in santa_visited: santa_visited.append(santa_pos)
+        if santa_pos not in visited: visited.append(santa_pos)
 
     else:                                   # odd positions
         if i=='^':
@@ -80,12 +80,6 @@ for i in puzzle_input:
         else:
             robo_pos = (robo_pos[0]-1, robo_pos[1])
 
-
-        if robo_pos not in robo_visited: robo_visited.append(robo_pos)
-
-print(len(robo_visited))
-print(len(santa_visited))
-
-visited= list(set(santa_visited + robo_visited))
-
+        if robo_pos not in visited: visited.append(robo_pos)
+        
 print(len(visited))
