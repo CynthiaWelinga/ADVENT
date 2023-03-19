@@ -33,3 +33,13 @@ for i in puzzle_input:
         pos = (pos[0], pos[1]+1)
     elif i=='v' or i=='V':
         pos = (pos[0], pos[1]-1)
+    elif i=='>':
+        pos = (pos[0]+1, pos[1])
+    else:
+        pos = (pos[0]-1, pos[1])
+
+    visited = [visited.append(pos) if pos not in visited]
+    a=[x.append('a') or x for x in a]
+
+print(pos)
+print(visited)
