@@ -57,4 +57,30 @@ visited = []
 santa_pos = (0,0)
 robo_pos = (0,0)
 for i in puzzle_input:
+    if puzzle_input.index(i) % 2 == 0:      # even positions
+        if i=='^':
+            santa_pos=(santa_pos[0], santa_pos[1]+1)
+        elif i=='v':
+            santa_pos = (santa_pos[0], santa_pos[1]-1)
+        elif i=='>':
+            santa_pos = (santa_pos[0]+1, santa_pos[1])
+        else:
+            santa_pos = (santa_pos[0]-1, santa_pos[1])
 
+        print(santa_pos)
+        if santa_pos not in visited: visited.append(santa_pos)
+
+    else:                                   # odd positions
+        if i=='^':
+            robo_pos = (robo_pos[0], robo_pos[1]+1)
+        elif i=='v':
+            robo_pos = (robo_pos[0], robo_pos[1]-1)
+        elif i=='>':
+            robo_pos = (robo_pos[0]+1, robo_pos[1])
+        else:
+            robo_pos = (robo_pos[0]-1, robo_pos[1])
+
+        print(robo_pos)
+        if robo_pos not in visited: visited.append(robo_pos)
+
+print(len(visited))
