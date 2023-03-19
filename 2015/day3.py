@@ -43,4 +43,5 @@ for i in puzzle_input:
 
 
 print(pos)
-print(visited)
+#print(visited)
+print(len(visited))
