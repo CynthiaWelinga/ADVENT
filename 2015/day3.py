@@ -23,3 +23,13 @@ For example:
 
 file_path = 'C:/Users/CynthiaWelinga/DEVELOPMENT/ADVENT/2015/day3.txt'
 puzzle_input = open(file_path).read()
+
+visited = []
+coordinates = ['^', 'v', '>', '<']
+pos = (0,0)
+
+for i in puzzle_input:
+    if i=='^':
+        pos = (pos[0], pos[1]+1)
+    elif i=='v' or i=='V':
+        pos = (pos[0], pos[1]-1)
