@@ -52,4 +52,9 @@ who is eggnoggedly reading from the same script as the previous year.
 
 This year, how many houses receive at least one present?
 """
+
+visited = []
+santa_pos = (0,0)
+robo_pos = (0,0)
 for i in puzzle_input:
+
